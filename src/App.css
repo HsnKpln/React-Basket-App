@@ -1,38 +1,170 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.noProduct {
+  width: 100%;
+  height: calc(100vh - 100px);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.productContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.products {
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
+  padding: 20px;
+  width: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+.imageContainer {
+  width: 100%;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.products  img{
+  height: 250px;
+  max-width: 300px;
+  max-height: 250px;
+}
+.buttonGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.buttonGroup button {
+  border: 0;
+  width: calc(50% - 20px);
+  height: 50px;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}
+.buttonGroup a {
+  border: 0;
+  width: calc(50% - 20px);
+  height: 50px;
+  background-color: red;
+  color: #fff;
+  cursor: pointer;
+}
+.products span {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 20px;
+  font-size: 26px;
+}
+
+.products h2 {
+  display: flex;
+  margin: 10px 0;
+  color: #f00;
+  font-size: 18px;
+}
+
+.basketProductList {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+  margin: 0 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.basketProductList {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+  margin: 0 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.basketProductList span, .basketProductListHeader span {
+  width: 200px;
+}
+.basketProductList button {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: #f00;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.basketProductListHeader {
+  display: flex;
+  background-color: #282c34;
+  color: #fff;
+  padding: 20px;
+  margin: 0 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Layout {
+  display: flex;
+  background-color: #ff0000;
+  color: #fff;
+  margin-bottom: 50px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.Layout span{
+  width: 100px;
+  border-left: 1px solid #fff;
+  padding: 5px 20px;
+}
+
+.Layout strong{
+  width: 36px;
+  border-left: 1px solid #fff;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.Layout strong b{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  background-color: #fff;
+  color: #f00;
+  border-radius: 12px;
+  right: 12px;
+  top: 12px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.Layout a:first-child span{
+  border-left: 0;
+}
+
+.Layout a {
+  color: #fff;
+  text-decoration: none;
 }
